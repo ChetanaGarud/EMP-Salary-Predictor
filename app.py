@@ -778,7 +778,7 @@ elif page == "Market Trends":
         st.plotly_chart(fig, use_container_width=True)
     else:
         st.warning("No specific job data available for this sector.")
-     admin_key = st.text_input("Enter admin key to view feedback:", type="password")
+admin_key = st.text_input("Enter admin key to view feedback:", type="password")
 
 if admin_key == "magic123":  # You can change this!
     feedback.show_feedback_history()

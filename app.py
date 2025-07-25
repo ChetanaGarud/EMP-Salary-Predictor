@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+import feedback
 from sklearn.preprocessing import LabelEncoder
 import plotly.express as px
 import plotly.graph_objects as go
@@ -786,5 +787,10 @@ st.markdown(
         <p>All salary figures are annual compensation in INR</p>
     </div>
     """,
+admin_key = st.text_input("Enter admin key to view feedback:", type="password")
+
+if admin_key == "magic123":  # You can change this!
+    feedback.show_feedback_history()
+
     unsafe_allow_html=True
 )

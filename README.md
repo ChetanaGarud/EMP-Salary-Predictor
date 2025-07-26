@@ -1,1 +1,1 @@
-A Streamlit-based machine learning app that predicts employee salaries based on various job-related features.
+A Streamlit-powered web app that uses machine learning to predict employee salaries based on key job-related features.
